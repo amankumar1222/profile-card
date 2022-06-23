@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Kumbh Sans', sans-serif;
+    color: hsl(229, 23%, 23%);
+}
+html{
+    overflow: hidden;
+}
+.flex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+body{
+min-height: 100vh;
+background-color: hsl(185, 75%, 39%);
+
+
+}
+
+.container{
+    width: 350px;
+    height: 400px;
+   
+}
+.avtarBg{
+height: 40%;
+background: url('/images/bg-pattern-card.svg');
+border-radius: 8px 8px 0px 0px;
+}
+
+.avtarInfo{
+   height: 60%;
+   background-color: #fff;
+   border-radius: 0px 0px 8px 8px;
+}
+.bgTop {
+    position: fixed;
+    width: 50vw;
+    height: 50vh; 
+    top: 0px;
+    left: 0px;
+    background: url('/images/bg-pattern-top.svg');
+    transform: rotate(180deg);
+    z-index: -1;
+}
+
+
+.bgBottom{
+    position: fixed;
+    background-color: #fff;
+    width: 50vw;
+    height: 50vh;
+    bottom: 0px;
+    right: 5px;
+    background: url('/images/bg-pattern-bottom.svg');
+    z-index: -1;
+}
+
+
+#fixedContainer {
+    position: fixed;
+    width: 600px;
+    height: 200px;
+    left: 50%;
+    top: 0%;
+    margin-left: -300px; /*half the width*/
+  }
+.avtarInfo{
+  
+flex-direction: column;
+position: relative;
+}
+.avtar{
+  
+flex-direction: column;
+height: 65%;
+
+}
+.avtar img{
+    border-radius: 50%;
+    border: 4px solid #fff;
+    position: absolute;
+    top: -50px;
+}
+.avtar h1{
+    font-size: 22px;
+    margin: 35px 0px 10px 0px;
+}
+.avtar h1 span{
+    color:  hsl(0, 0%, 59%);
+}
+.avtar p{
+    color:  hsl(0, 0%, 59%); 
+}
+
+
+ul{
+    display: flex;
+    height: 35%;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    border-top: .3px solid rgba(221, 221, 221, 0.636);
+}
+ul li{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+}
+.social-number{
+    font-size: 22px;
+    font-weight: 700;
+}
+.social-name{
+    
+    color:  hsl(0, 0%, 59%);
+}
+
+
+
+
+
+
+
+
+/* footer css  */
+footer{
+    position: absolute;
+    bottom: 10px;
+    font-size: 18px;
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(0, 0%, 84%);
+text-decoration: none;
+font-size: 18px;
+
+}
+
+@media only screen and (max-width: 400px) {
+    .container{
+        width: 95vw;
+    }
+}
